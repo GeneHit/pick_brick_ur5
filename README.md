@@ -15,7 +15,7 @@ a installation toturial [ikfast](http://docs.ros.org/kinetic/api/moveit_tutorial
   
   
 # run command
-open four teminals:
+open four teminals:  
 first ter
 >roslaunch pick_brick_ur5 initialize_bricks.launch  
 
@@ -28,3 +28,4 @@ third ter
 fourth ter
 >rosrun pick_brick_ur5 brick_stackV4_6.py  
 
+The final demo could be found in [media](media)  
