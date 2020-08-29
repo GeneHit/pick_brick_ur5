@@ -12,3 +12,19 @@ for vacuum gripper.
 ## 4.OpenCV (at least 2.7 version)  
 ## 5.ikfast kinematic solver
 a installation toturial [ikfast](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/ikfast/ikfast_tutorial.html)  
+  
+  
+# run command
+open four teminals:
+first ter
+>roslaunch pick_brick_ur5 initialize_bricks.launch  
+
+second ter  
+>rosrun pick_brick_ur5 vacuumpump_srv.py  
+
+third ter  
+>rosrun pick_brick_ur5 brick_det_2base_4.py  
+
+fourth ter
+>rosrun pick_brick_ur5 brick_stackV4_6.py  
+
