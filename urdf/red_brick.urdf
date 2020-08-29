@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<robot name="red_brick">
+
+  <link name="brick_link">
+    <collision>
+      <geometry>
+        <!--mesh filename="package://pick_brick_ur5/mesh/collision/brick.stl" /-->
+        <box size="0.24 0.115 0.053" />
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>500000</mu>
+            <mu2>500000</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+          <mesh filename="package://pick_brick_ur5/mesh/vision/brick.dae" />
+      </geometry>
+      <!--material name="brick_red">
+          <color rgba="0.32 0.191 0.113 1"/>
+      </material-->
+    </visual>
+
+    <!--inertial>
+      <mass value="2.6" />
+      <inertia
+        ixx="0.166667" ixy="0.0"  ixz="0.0"
+        iyy="0.166667" iyz="0.0"
+        izz="0.166667" />
+    </inertial-->
+    <inertial>
+      <mass value="0.05" />
+      <inertia
+        ixx="0.166667" ixy="0.0"  ixz="0.0"
+        iyy="0.166667" iyz="0.0"
+        izz="0.166667" />
+    </inertial>
+  </link>
+
+  <gazebo reference="brick_link">
+    <!--mu1>5</mu1>
+    <mu2>5</mu2-->
+    <self_collide>0</self_collide>
+    <kinematic>0</kinematic>
+    <gravity>1</gravity>
+  </gazebo>
+
+</robot>

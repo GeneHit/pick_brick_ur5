@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot name="red_brick">
+
+  <link name="base_link">
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.24 0.115 0.053" />
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.24 0.115 0.053" />
+      </geometry>
+      <material name="brick_red">
+          <color rgba="0.32 0.191 0.113 1"/>
+      </material>
+    </visual>
+
+    <inertial>
+      <mass value="2.6" />
+      <inertia
+        ixx="0.166667" ixy="0.0"  ixz="0.0"
+        iyy="0.166667" iyz="0.0"
+        izz="0.166667" />
+    </inertial>
+  </link>
+
+  <gazebo reference="base_link">
+    <material>Gazebo/Red</material>
+      <mu1>5</mu1>
+      <mu2>5</mu2>
+      <self_collide>1</self_collide>
+      <kinematic>0</kinematic>
+      <gravity>1</gravity>
+  </gazebo>
+
+</robot>
