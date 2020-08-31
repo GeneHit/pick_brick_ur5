@@ -1,6 +1,7 @@
 # simulation of stack-brick system  
 The project was finished on 06/2019.  
-The project demonstrates UR5 pick-and-place in ROS and Gazebo. The UR5 uses a Kinect camera to detect the bricks (brick_det_2base_4.py). The position and orientation is published. UR5(brick_stackV4_6.py) searches for brick and picks it(vacuumpump_srv.py). After UR5 picks a brick, controller will take the UR5 motion to place to place the brick in sorted.
+The project demonstrates UR5 pick-and-place in ROS and Gazebo. The UR5 uses a Kinect camera to detect the bricks (brick_det_2base_4.py). The position and orientation is published. UR5(brick_stackV4_6.py) searches for brick and picks it(vacuumpump_srv.py). After UR5 picks a brick, controller will take the UR5 motion to place to place the brick in sorted.  
+The final demo could be found in [demo](https://youtu.be/KV2r1aGEdeI)
   
 # Neccesary Resources  
 ## 1.[universal_robot](https://github.com/ros-industrial/universal_robot)  
@@ -27,5 +28,4 @@ third ter
 
 fourth ter
 >rosrun pick_brick_ur5 brick_stackV4_6.py  
-
-The final demo could be found in [media](media)  
+  
