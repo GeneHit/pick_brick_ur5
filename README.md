@@ -27,7 +27,5 @@ third ter
 >rosrun pick_brick_ur5 brick_det_2base_4.py  
 
 fourth ter
-```
-rosrun pick_brick_ur5 brick_stackV4_6.py  
-```
+>rosrun pick_brick_ur5 brick_stackV4_6.py  
   
